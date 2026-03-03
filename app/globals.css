@@ -1,0 +1,568 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@layer utilities {
+  /*HERO FONT FAMILY*/
+  .hero-font {
+    font-family: var(--font-montserrat);
+  }
+  .hero-small-hero-text {
+  }
+  .hero-large-hero-text {
+  }
+  .hero-line-height {
+  }
+  /*!DESKTOP HEADER UTILITY CLASSES*/
+  .desktop-h1 {
+    font-family: var(--font-red-hat-display);
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+  .desktop-h2 {
+    font-family: var(--font-red-hat-display);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .desktop-h2-light {
+    font-family: var(--font-red-hat-display);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+  }
+  .desktop-h3 {
+    font-family: var(--font-red-hat-display);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .desktop-h4 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+  .desktop-h5 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .desktop-h6 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  /*?DESKTOP BODY UTILITY CLASSES*/
+  .desktop-large-bold {
+    font-family: var(--font-inter);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  .desktop-large {
+    font-family: var(--font-inter);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+
+  .desktop-normal-bold {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  .desktop-normal {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  .desktop-small-bold {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+
+  .desktop-small {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+
+  .desktop-small-supersmall {
+    font-family: var(--font-inter);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+  }
+
+  /*!MOBILE HEADER UTILITY CLASSES*/
+
+  .mobile-h1 {
+    font-family: var(--font-red-hat-display);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+
+  .mobile-h2 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+
+  .mobile-h2-light {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+  }
+
+  .mobile-h3 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  .mobile-h4 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  .mobile-h5 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 700;
+  }
+
+  .mobile-h6 {
+    font-family: var(--font-red-hat-display);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  /*?MOBILE BODY UTILITY CLASSES*/
+
+  .mobile-large-bold {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  .mobile-large {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  .mobile-normal-bold {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+
+  .mobile-normal {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+
+  .mobile-small-bold {
+    font-family: var(--font-inter);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+  }
+
+  .mobile-small {
+    font-family: var(--font-inter);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+  }
+
+  .mobile-small-supersmall {
+    font-family: var(--font-inter);
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    font-weight: 400;
+  }
+
+  /**BUTTONS UTILITY CLASSES*/
+
+  /*!GOLD BUTTON*/
+  .gold-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-inter);
+    background-color: #ff7124;
+    color: #272727;
+    border: none;
+    transition: 0.3s all linear;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+
+  .gold-btn:hover {
+    background-color: #ff9c67;
+  }
+
+  .gold-btn:focus {
+    outline: 2px solid #ac440b;
+  }
+
+  .gold-btn:disabled {
+    color: #b8b8b8;
+    background-color: #f3f3f3;
+  }
+
+  /*!LIGHT BUTTON*/
+  .light-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-inter);
+    background-color: #ffffff;
+    color: #272727;
+    border: 2px solid #b8b8b8;
+    transition: 0.3s all linear;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+
+  .light-btn:hover {
+    background-color: #fafafa;
+  }
+
+  .light-btn:focus {
+    background-color: #f3f3f3;
+    border: 2px solid #b8b8b8;
+  }
+
+  .light-btn:disabled {
+    color: #b8b8b8;
+    border: 2px solid #b8b8b8;
+    background-color: transparent;
+  }
+
+  /*!AQUA BORDER BUTTON*/
+  .aqua-border-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    color: #0049b6;
+    border: none;
+    transition: 0.3s all linear;
+    padding: 15px 25px;
+    border-radius: 20px;
+    outline: 1px solid #0066ff;
+  }
+
+  .aqua-border-btn:hover {
+    background-color: #e9f2ff;
+  }
+
+  .aqua-border-btn:focus {
+    background-color: #dae9ff;
+    outline: 2px solid #0057db;
+  }
+
+  .aqua-border-btn:disabled {
+    color: #79afff;
+    outline: 1px solid #79afff;
+    background-color: transparent;
+  }
+
+  /*!AQUA BUTTON*/
+  .aqua-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-inter);
+    background-color: #0066ff;
+    color: #ffffff;
+    border: none;
+    transition: 0.3s all linear;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+
+  .aqua-btn:hover {
+    background-color: #2b7fff;
+  }
+
+  .aqua-btn:focus {
+    outline: 2px solid #0049b6;
+  }
+
+  .aqua-btn:disabled {
+    color: #79afff;
+    background-color: #e9f2ff;
+  }
+
+  /*? FONT UTILITYa*/
+  .font-manrope {
+    font-family: var(--font-manrope);
+  }
+
+  /*!CHECK BOX STYLE*/
+  .register-checkbox {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.custom-gallery .image-gallery-slide img {
+  max-height: calc(100vh - 160px) !important; /* Leaves extra space */
+  object-fit: contain; /* Prevents distortion */
+}
+
+.custom-gallery .image-gallery {
+  max-height: calc(100vh - 80px);
+}
+
+@keyframes check {
+  0% {
+    stroke-dashoffset: 30;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.cart-flex-box {
+  flex-direction: row;
+}
+
+.cart-summary-flex-box {
+  width: auto;
+}
+
+.description-main-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-main-frame > img {
+  width: 100%;
+}
+
+.description-grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 950px) {
+  .cart-flex-box {
+    flex-direction: column;
+  }
+  .cart-summary-flex-box {
+    width: 100%;
+  }
+}
+
+.hero-car-image-box {
+}
+
+.section-height-box {
+}
+
+.PhoneInputInput {
+  outline: none;
+}
+
+.contact-grid-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.contact-btn {
+  width: 180px;
+  transition: background-color 0.5s linear !important;
+}
+
+.footer-list-box {
+  flex-direction: row;
+}
+
+.register-location-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.my-offers-grid {
+  grid-template-columns: 2fr 5fr;
+}
+
+.offer-grid-box {
+  grid-template-columns: auto 1fr auto;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.blog-grid-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  .contact-grid-form {
+    grid-template-columns: 1fr;
+    row-gap: 10px !important;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .my-offers-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-grid-form {
+    grid-template-columns: 1fr auto;
+  }
+  .contact-btn {
+    width: 180px;
+  }
+  .register-location-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .description-grid-box {
+    grid-template-columns: 1fr;
+  }
+  .description-main-frame {
+    flex-direction: row;
+  }
+  .description-main-frame > img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .hero-large-hero-text {
+    font-size: 80px;
+  }
+  .contact-grid-form {
+    grid-template-columns: 1fr;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+  .hero-small-hero-text {
+    font-size: 60px;
+  }
+  .hero-line-height {
+    line-height: 60px !important;
+  }
+  .hero-car-image-box {
+    top: 350px !important;
+  }
+  .section-height-box {
+    height: 550px;
+  }
+  .offer-grid-box {
+    grid-template-columns: 30px 1fr;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-large-hero-text {
+    font-size: 70px;
+  }
+  .hero-small-hero-text {
+    font-size: 50px;
+  }
+  .section-height-box {
+    height: 500px;
+  }
+  .footer-list-box {
+    flex-direction: column;
+  }
+  .footer-list-box > li {
+    border: none !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-large-hero-text {
+    font-size: 55px;
+  }
+  .hero-small-hero-text {
+    font-size: 40px;
+  }
+  .hero-line-height {
+    line-height: 40px !important;
+  }
+  .hero-car-image-box {
+    top: 345px !important;
+  }
+}
+
+.animate-check {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  animation: check 0.3s ease-in-out forwards;
+}
